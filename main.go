@@ -7,6 +7,7 @@
 package main
 
 import (
+	. "alitts/token"
 	"flag"
 	"fmt"
 	"os"
@@ -78,7 +79,7 @@ func main() {
 	}
 
 	// 获取阿里接口token
-	token, err := GetAliToken()
+	token, err := GetAliToken(AccessKeyId, AccessKeySecret)
 	if err != nil {
 		panic("ali token get err")
 	}

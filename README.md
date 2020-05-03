@@ -1,7 +1,6 @@
-# 阿里云TTS语音合成插件
+# 阿里云TTS语音合成-library版
 
-### 效果图
-![image](https://github.com/Qianlu5110/alitts/blob/master/demo.png)
+方便调用^.^!
 
 ### 完善common.go中三个对应的阿里云配置信息就可以进行编译运行
 ```go
