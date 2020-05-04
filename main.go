@@ -7,6 +7,7 @@
 package main
 
 import (
+	. "alitts/alitts"
 	. "alitts/token"
 	"flag"
 	"fmt"
@@ -73,7 +74,7 @@ func main() {
 	fmt.Println(dir)
 
 	// 准备工作目录
-	workDirState := InitWorkDir()
+	workDirState := InitWorkDir(dir)
 	if !workDirState {
 		panic("work dir init err")
 	}
@@ -86,5 +87,5 @@ func main() {
 
 	// 进行阿里TTs
 	filePath := dir + txt + "_" + strconv.Itoa(sample) + "." + format
-	processPOSTRequest(token, txt, filePath, format, sample, voice)
+	ProcessPOSTRequest(token, txt, filePath, format, sample, voice)
 }
