@@ -7,10 +7,10 @@
 package main
 
 import (
-	. "alitts/alitts"
-	. "alitts/token"
 	"flag"
 	"fmt"
+	. "github.com/linexjlin/alitts/alitts"
+	. "github.com/linexjlin/alitts/token"
 	"os"
 	"runtime"
 	"strconv"
