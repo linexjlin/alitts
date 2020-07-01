@@ -21,6 +21,7 @@ func ProcessPOSTRequest(
 	audioSaveFile string,
 	format string,
 	sampleRate int,
+	speechRate int,
 	voice string) {
 
 	/**
@@ -44,7 +45,7 @@ func ProcessPOSTRequest(
 	// volume 音量，范围是0~100，可选，默认50
 	bodyContent["volume"] = 50
 	// speech_rate 语速，范围是-500~500，可选，默认是0
-	bodyContent["speech_rate"] = 0
+	bodyContent["speech_rate"] = speechRate
 	// pitch_rate 语调，范围是-500~500，可选，默认是0
 	bodyContent["pitch_rate"] = 0
 

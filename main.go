@@ -87,5 +87,6 @@ func main() {
 
 	// 进行阿里TTs
 	filePath := dir + txt + "_" + strconv.Itoa(sample) + "." + format
-	ProcessPOSTRequest(token, txt, filePath, format, sample, voice)
+	speechRate := 0
+	ProcessPOSTRequest(token, txt, filePath, format, sample, speechRate, voice)
 }
